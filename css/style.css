@@ -225,13 +225,20 @@ footer {
   float: left;
 }
 
-
 .resume-item {
   color: #263238;
   font-size: 28px;
   font-family: "Fjalla One";
   margin-left: 20px;
   float: left;
+  display: inline-block;
+}
+
+#sem-title {
+  color: #263238;
+  font-size: 28px;
+  font-family: "Fjalla One";
+  margin-left: 20px;
   display: inline-block;
 }
 
@@ -293,13 +300,13 @@ footer {
   font-size: 28px;
   font-family: "Fjalla One";
   display: inline-block;
-  margin: 0 0 -20px 20px;
+  margin: 20px 20px 20px 20px;
 }
 
 .skills-text {
   font-family: "David Libre";
   font-size: 18px;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 20px 20px;
   text-align: justify;
 }
 
