@@ -6,6 +6,7 @@
 
   <title>Andrew Levandoski</title>
 
+  <link rel="icon" href="images/favicon.ico">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -34,18 +35,18 @@
   <nav id="dynamic-header" class="blue-grey darken-4">
     <img id="dynamic-name-logo" src="images/name-logo.png" alt="Andrew Levandoski" align="middle"/>
     <div id="dynamic-tab-container">
-      <a class="dynamic-tab" href="index.html">HOME</a>
-      <a class="dynamic-tab" style="color: #607D8B" href="projects.html">PROJECTS</a>
-      <a class="dynamic-tab" href="artwork.html">ARTWORK</a>
-      <a class="dynamic-tab" href="resume.html">RESUME</a>
+      <a class="dynamic-tab" href="index.php">HOME</a>
+      <a class="dynamic-tab" style="color: #607D8B" href="projects.php">PROJECTS</a>
+      <a class="dynamic-tab" href="artwork.php">ARTWORK</a>
+      <a class="dynamic-tab" href="resume.php">RESUME</a>
     </div>
   </nav>
 
   <div id="tab-container">
-    <a class="tab" href="index.html">HOME</a>
-    <a class="tab" style="color: #607D8B" href="projects.html">PROJECTS</a>
-    <a class="tab" href="artwork.html">ARTWORK</a>
-    <a class="tab" href="resume.html">RESUME</a>
+    <a class="tab" href="index.php">HOME</a>
+    <a class="tab" style="color: #607D8B" href="projects.php">PROJECTS</a>
+    <a class="tab" href="artwork.php">ARTWORK</a>
+    <a class="tab" href="resume.php">RESUME</a>
   </div>
 
   <hr>
@@ -59,6 +60,16 @@
 
   <hr>
 
+  <div class="skills-container">
+    <div class="skills-inner-container">
+      <h4 class="skills-item">Skills</h4>
+      <p class="skills-text">
+        Statistical Analysis, Java Development, Web Architecture and Development Frameworks
+        (Bootstrap, Angular), Network and Information Security, User Interface Design, Software
+        QA and User Testing, Algorithm Design, Data Engineering, Economics
+      </p>
+    </div>
+  </div>
   <div class="skills-container">
     <div class="skills-double-container">
       <div class="skills-container-left">
@@ -94,13 +105,13 @@
 
     <div class="skills-double-container">
       <div class="skills-container-left">
-        <h4 class="skills-item">Other Skills</h4>
+        <h4 class="skills-item">Other</h4>
         <p class="skills-text">
           Version Control Systems (Git), Microsoft Office, Mathematica, Corel.
         </p>
       </div>
     </div>
-    <div class="skills-double-container">
+    <div class="skills-double-container-space">
     </div>
   </div>
 
@@ -157,17 +168,14 @@
       <p>
         I am a computer science and economics major at the University of Pittsburgh.
       </p>
+    </div>
+
+    <div class="footer-section-right">
       <h5 class="footer-title">Contact</h5>
       <p>
         <a class="white-text" href="https://mail.google.com/mail/?fs=1&view=cm&shva=1&su=&to=andrewlevandoski@pitt.edu" target="_blank">andrewlevandoski@pitt.edu</a></li>
       </p>
-      <a href="contact.html" style="color: #FFFFFF">Contact Form</a>
-    </div>
-
-    <div class="footer-section-right">
-      <h5 class="footer-title">Photo Stream</h5>
-      <!-- Instagram Widget -->
-      <iframe id="insta-widget" src="https://snapwidget.com/embed/267955" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+      <a href="contact.php" style="color: #FFFFFF">Contact Form</a>
     </div>
     <div id="footer-bottom" class="blue-grey darken-4">
       <p>
@@ -177,6 +185,7 @@
   </footer>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 

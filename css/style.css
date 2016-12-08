@@ -104,7 +104,7 @@ hr {
 }
 
 footer {
-  height: 350px;
+  height: 200px;
   padding-left: 5%;
   padding-top: 20px;
   margin-top: 80px;
@@ -132,53 +132,38 @@ footer {
   margin: 0 16% 20px 0;
 }
 
-#insta-widget {
-  margin-top: 10px;
-  height: 200px;
-  width: 84%;
-  border: none;
-  overflow: hidden;
+.insta-wrapper-3-top {
+  width: 80%;
+  margin: 20px 20% 0 20%;
+  padding-left: 5px;
 }
 
-.photo-stream-container {
-  height: 200px;
-  width: 200px;
-  margin: 10px 30px 0 0;
-  float: left;
+.insta-wrapper-3 {
+  width: 80%;
+  margin: 0 20% 0 20%;
+  padding-left: 5px;
 }
 
-.photo-stream-button-left {
-  padding-top: 50px;
-  padding-left: 7px;
-  margin-top: 10px;
-  height: 200px;
-  width: 30px;
-  float: left;
-  background-color: #263238;
+.insta-pic {
+  width: 25.2%;
+  margin: 0 0 -6px -5px;
 }
 
-.photo-stream-button-right {
-  padding-top: 50px;
-  padding-left: 8px;
-  margin-top: 10px;
-  height: 200px;
-  width: 30px;
-  background-color: #263238;
-  float: left;
+.insta-back {
+  width: 25.2%;
+  margin: 0 0 -6px -5px;
+  background-color: black;
 }
 
-.photo-stream-arrow {
-  color: #FFFFFF;
-  font-size: 28px;
-  font-family: "David Libre";
-  font-style:
+#schools-double {
+  margin-bottom: 200px;
 }
 
 #footer-bottom {
   height: 65px;
   padding-left: 5%;
   padding-top: 1px;
-  margin: 300px 0 0 -5.3%;
+  margin: 160px 0 0 -5.3%;
   color: #FFFFFF;
   font-family: "Homemade Apple";
   font-size: 18px;
@@ -189,7 +174,7 @@ footer {
   border-width: thin;
   border-color: #455A64;
   display: block;
-  margin: 20px 20% 0 20%;
+  margin: 20px 20% 0 20px;
   padding-bottom: 67px;
 }
 
@@ -273,8 +258,18 @@ footer {
 
 .skills-double-container-space {
   display: block;
-  height: 500px;
+  height: 300px;
   margin: 20px 20% 0 20%;
+}
+
+.skills-inner-container {
+  margin: 20px 20% 0 20%;
+
+  border-style: solid;
+  border-width: thin;
+  border-color: #455A64;
+  float: left;
+  margin-bottom: 20px;
 }
 
 .skills-container-left {
@@ -455,6 +450,7 @@ footer {
   border-color: #263238;
   border-style: solid;
   border-width: thin;
+  padding: 20px;
 }
 
 .form-item-container {
@@ -468,6 +464,7 @@ footer {
   width: 100%;
   font-family: "David Libre";
   font-size: 12px;
+  font-style: none;
 }
 
 #name {
@@ -489,6 +486,7 @@ footer {
   margin: 20px;
   text-align: center;
   color: #C62828;
+  font-style: none;
 }
 
 #submit-message {
@@ -517,4 +515,9 @@ footer {
   margin: 20px 25% 0 25%;
   background-color: #263238;
   text-align: center;
+}
+
+#send-button {
+  height: 50px;
+  width: 100px;
 }

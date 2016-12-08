@@ -13,15 +13,71 @@ jQuery(document).ready(function($){
 
   $("#dynamic-header").hide();
 
+
+  // Window resize handling
+  var $window = $(window);
+
+  function checkWidth() {
+    var windowsize = $window.width();
+    var marginSize = windowsize/5;
+
+    if (windowsize > 1150) {
+      $("#dynamic-name-logo").css("margin-left", "20%");
+      $("#dynamic-tab-container").css("margin-right", "20%");
+      $("hr").css("margin-left", "20%");
+      $("hr").css("margin-right", "20%");
+
+      $(".art-container").css("width", "60%");
+      $(".art-container").css("margin-left", marginSize);
+
+      $(".text-container").css("width", "60%");
+      $(".text-container").css("margin-left", marginSize);
+      $(".skills-double-container").css("width", "60%");
+      $(".skills-double-container").css("margin-left", marginSize);
+      $(".skills-inner-container").css("width", "60%");
+      $(".skills-inner-container").css("margin-left", marginSize);
+
+      $(".title-container").css("width", "60%");
+      $(".title-container").css("margin-left", marginSize);
+      $(".form-container").css("width", "60%");
+      $(".form-container").css("margin-left", marginSize);
+    } else {
+      $("#dynamic-name-logo").css("margin-left", 25);
+      $("#dynamic-tab-container").css("margin-right", 20);
+      $("hr").css("margin-left", 10);
+      $("hr").css("margin-right", 10);
+
+      $(".art-container").css("width", "98%");
+      $(".art-container").css("margin-left", 10);
+
+      $(".text-container").css("width", "98%");
+      $(".text-container").css("margin-left", 10);
+      $(".skills-double-container").css("width", "98%");
+      $(".skills-double-container").css("margin-left", 10);
+      $(".skills-inner-container").css("width", "98%");
+      $(".skills-inner-container").css("margin-left", 10);
+
+      $(".title-container").css("width", "98%");
+      $(".title-container").css("margin-left", 10);
+      $(".form-container").css("width", "98%");
+      $(".form-container").css("margin-left", 10);
+    }
+  }
+
+  checkWidth();
+  //changeMargins();
+
+  $(window).resize(checkWidth);
+  //$(window).resize(changeMargins);
+
+
   $(function(){
   $(window).scroll(function() {
       var scroll = $(window).scrollTop(); // how many pixels you've scrolled
       var os = $('#header').offset().top; // pixels to the top of div1
-      var ht = $('#header').height(); // height of div1 in pixels
-      // if you've scrolled further than the top of div1 plus it's height
-      // change the color. either by adding a class or setting a css property
+      var ht = $('#header').height();
       if(scroll > os + ht + 75){
-          $("#dynamic-header").show();
+          $("#dynamic-header").fadeIn();
       }
       else {
         $("#dynamic-header").hide();
@@ -50,18 +106,37 @@ jQuery(document).ready(function($){
 
 
   //Art Page Handling
+  $("#Photos-art-wrapper").hide();
   $("#2015-art-wrapper").hide();
   $("#2014-art-wrapper").hide();
   $("#2013-art-wrapper").hide();
   $("#2012-art-wrapper").hide();
 
+  $("#Photos-art").click(function() {
+    $("#Photos-art-wrapper").show();
+    $("#2016-art-wrapper").hide();
+    $("#2015-art-wrapper").hide();
+    $("#2014-art-wrapper").hide();
+    $("#2013-art-wrapper").hide();
+    $("#2012-art-wrapper").hide();
+
+    $('#Photos-art').css("color", "#B0BEC5");
+    $('#2016-art').css("color", "#607D8B");
+    $('#2015-art').css("color", "#607D8B");
+    $('#2014-art').css("color", "#607D8B");
+    $('#2013-art').css("color", "#607D8B");
+    $('#2012-art').css("color", "#607D8B");
+  });
+
   $("#2016-art").click(function() {
+    $("#Photos-art-wrapper").hide();
     $("#2016-art-wrapper").show();
     $("#2015-art-wrapper").hide();
     $("#2014-art-wrapper").hide();
     $("#2013-art-wrapper").hide();
     $("#2012-art-wrapper").hide();
 
+    $('#Photos-art').css("color", "#607D8B");
     $('#2016-art').css("color", "#B0BEC5");
     $('#2015-art').css("color", "#607D8B");
     $('#2014-art').css("color", "#607D8B");
@@ -70,12 +145,14 @@ jQuery(document).ready(function($){
   });
 
   $("#2015-art").click(function() {
+    $("#Photos-art-wrapper").hide();
     $("#2016-art-wrapper").hide();
     $("#2015-art-wrapper").show();
     $("#2014-art-wrapper").hide();
     $("#2013-art-wrapper").hide();
     $("#2012-art-wrapper").hide();
 
+    $('#Photos-art').css("color", "#607D8B");
     $('#2016-art').css("color", "#607D8B");
     $('#2015-art').css("color", "#B0BEC5");
     $('#2014-art').css("color", "#607D8B");
@@ -84,12 +161,14 @@ jQuery(document).ready(function($){
   });
 
   $("#2014-art").click(function() {
+    $("#Photos-art-wrapper").hide();
     $("#2016-art-wrapper").hide();
     $("#2015-art-wrapper").hide();
     $("#2014-art-wrapper").show();
     $("#2013-art-wrapper").hide();
     $("#2012-art-wrapper").hide();
 
+    $('#Photos-art').css("color", "#607D8B");
     $('#2016-art').css("color", "#607D8B");
     $('#2015-art').css("color", "#607D8B");
     $('#2014-art').css("color", "#B0BEC5");
@@ -98,12 +177,14 @@ jQuery(document).ready(function($){
   });
 
   $("#2013-art").click(function() {
+    $("#Photos-art-wrapper").hide();
     $("#2016-art-wrapper").hide();
     $("#2015-art-wrapper").hide();
     $("#2014-art-wrapper").hide();
     $("#2013-art-wrapper").show();
     $("#2012-art-wrapper").hide();
 
+    $('#Photos-art').css("color", "#607D8B");
     $('#2016-art').css("color", "#607D8B");
     $('#2015-art').css("color", "#607D8B");
     $('#2014-art').css("color", "#607D8B");
@@ -112,12 +193,14 @@ jQuery(document).ready(function($){
   });
 
   $("#2012-art").click(function() {
+    $("#Photos-art-wrapper").hide();
     $("#2016-art-wrapper").hide();
     $("#2015-art-wrapper").hide();
     $("#2014-art-wrapper").hide();
     $("#2013-art-wrapper").hide();
     $("#2012-art-wrapper").show();
 
+    $('#Photos-art').css("color", "#607D8B");
     $('#2016-art').css("color", "#607D8B");
     $('#2015-art').css("color", "#607D8B");
     $('#2014-art').css("color", "#607D8B");
@@ -162,7 +245,7 @@ jQuery(document).ready(function($){
   // Photo Stream Handling
 
   // Form Handling
-  $("#submit-message").hide();
+  $("#submit-message").show();
   $("#error-message").hide();
   $("#error-text-1").hide();
   $("#error-text-2").hide();

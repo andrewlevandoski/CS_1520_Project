@@ -35,18 +35,18 @@
   <nav id="dynamic-header" class="blue-grey darken-4">
     <img id="dynamic-name-logo" src="images/name-logo.png" alt="Andrew Levandoski" align="middle"/>
     <div id="dynamic-tab-container">
-      <a class="dynamic-tab" href="index.html">HOME</a>
-      <a class="dynamic-tab" href="projects.html">PROJECTS</a>
-      <a class="dynamic-tab" href="artwork.html">ARTWORK</a>
-      <a class="dynamic-tab" style="color: #607D8B" href="resume.html">RESUME</a>
+      <a class="dynamic-tab" href="index.php">HOME</a>
+      <a class="dynamic-tab" href="projects.php">PROJECTS</a>
+      <a class="dynamic-tab" href="artwork.php">ARTWORK</a>
+      <a class="dynamic-tab" style="color: #607D8B" href="resume.php">RESUME</a>
     </div>
   </nav>
 
   <div id="tab-container">
-    <a class="tab" href="index.html">HOME</a>
-    <a class="tab" href="projects.html">PROJECTS</a>
-    <a class="tab" href="artwork.html">ARTWORK</a>
-    <a class="tab" style="color: #607D8B" href="resume.html">RESUME</a>
+    <a class="tab" href="index.php">HOME</a>
+    <a class="tab" href="projects.php">PROJECTS</a>
+    <a class="tab" href="artwork.php">ARTWORK</a>
+    <a class="tab" style="color: #607D8B" href="resume.php">RESUME</a>
   </div>
 
   <hr>
@@ -141,7 +141,7 @@
       </div>
     </div>
 
-    <div class="skills-double-container">
+    <div id="schools-double" class="skills-double-container">
       <div id="sem" class="skills-container-left">
         <img id="sem-photo" src="images/sem.jpg" alt="wyoming seminary" />
         <h4 id="sem-title">Wyoming Seminary Upper School</h4>
@@ -183,6 +183,7 @@
       </div>
     </div>
     <div class="skills-double-container-space">
+
     </div>
   </div>
 
@@ -238,17 +239,14 @@
       <p>
         I am a computer science and economics major at the University of Pittsburgh.
       </p>
+    </div>
+
+    <div class="footer-section-right">
       <h5 class="footer-title">Contact</h5>
       <p>
         <a class="white-text" href="https://mail.google.com/mail/?fs=1&view=cm&shva=1&su=&to=andrewlevandoski@pitt.edu" target="_blank">andrewlevandoski@pitt.edu</a></li>
       </p>
-      <a href="contact.html" style="color: #FFFFFF">Contact Form</a>
-    </div>
-
-    <div class="footer-section-right">
-      <h5 class="footer-title">Photo Stream</h5>
-      <!-- SnapWidget -->
-      <iframe id="insta-widget" src="https://snapwidget.com/embed/267955" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+      <a href="contact.php" style="color: #FFFFFF">Contact Form</a>
     </div>
     <div id="footer-bottom" class="blue-grey darken-4">
       <p>
