@@ -245,7 +245,7 @@ jQuery(document).ready(function($){
   // Photo Stream Handling
 
   // Form Handling
-  $("#submit-message").hide();
+  $("#submit-message").show();
   $("#error-message").hide();
   $("#error-text-1").hide();
   $("#error-text-2").hide();

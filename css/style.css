@@ -450,6 +450,7 @@ footer {
   border-color: #263238;
   border-style: solid;
   border-width: thin;
+  padding: 20px;
 }
 
 .form-item-container {
@@ -514,4 +515,9 @@ footer {
   margin: 20px 25% 0 25%;
   background-color: #263238;
   text-align: center;
+}
+
+#send-button {
+  height: 50px;
+  width: 100px;
 }

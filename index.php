@@ -9,7 +9,10 @@
 		<title>Andrew Levandoski</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:image" content="images/me1.jpg" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+
+		<link rel="icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Asul|David+Libre|Fjalla+One|Homemade+Apple" rel="stylesheet">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -20,10 +23,10 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/me1.jpg" alt="" /></a>
-					<h1>Projects</h1>
-					<h1>Artwork</h1>
-					<h1>Resume</h1>
-					<h1>Contact</h1>
+					<a href="projects.php"><h1>Projects</h1></a>
+					<a href="artwork.php"><h1>Artwork</h1></a>
+					<a href="resume.php"><h1>Resume</h1></a>
+					<a href="contact.php"><h1>Contact</h1></a>
 					<div class="media-container">
 			      <a href="https://www.facebook.com/1alevandoski" target="_blank">
 			        <img class="social" src="images/social-icons/facebook.png" alt="facebook"/>
